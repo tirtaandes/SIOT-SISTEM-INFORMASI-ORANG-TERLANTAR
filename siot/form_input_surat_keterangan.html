@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Input Surat Keterangan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sistem Pendataan Orang Terlantar</h1>
+    </header>
+    <h1>Form Input Surat Keterangan</h1>
+    <form action="proses_surat_keterangan.php" method="POST">
+        <label for="nomor_surat">Nomor Surat:</label>
+        <input type="text" name="nomor_surat" id="nomor_surat" required><br><br>
+
+        <label for="tanggal_penerbitan">Tanggal Penerbitan:</label>
+        <input type="date" name="tanggal_penerbitan" id="tanggal_penerbitan"><br><br>
+
+        <label for="deskripsi_keperluan">Deskripsi Keperluan:</label><br>
+        <textarea name="deskripsi_keperluan" id="deskripsi_keperluan" rows="4" cols="50"></textarea><br><br>
+
+        <label for="id_orang_terlantar">ID Orang Terlantar:</label>
+        <input type="text" name="id_orang_terlantar" id="id_orang_terlantar" required><br><br>
+
+        <input type="submit" value="Simpan Surat Keterangan">
+        <a href="index.html">Kembali</a>
+    </form>
+    <footer>
+        &copy; 2023 Sistem Pendataan Orang Terlantar
+    </footer>
+</body>
+</html>

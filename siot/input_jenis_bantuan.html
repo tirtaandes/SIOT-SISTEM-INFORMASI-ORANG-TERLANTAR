@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Input Jenis Bantuan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sistem Pendataan Orang Terlantar</h1>
+    </header>
+    <h1>Form Input Jenis Bantuan</h1>
+    <form action="proses_jenis_bantuan.php" method="POST">
+        <label for="jenis_bantuan">Jenis Bantuan:</label>
+        <input type="text" name="jenis_bantuan" id="jenis_bantuan" required><br><br>
+
+        <label for="deskripsi_bantuan">Deskripsi Bantuan:</label><br>
+        <textarea name="deskripsi_bantuan" id="deskripsi_bantuan" rows="4" cols="50"></textarea><br><br>
+
+        <label for="jumlah_bantuan">Jumlah Bantuan:</label>
+        <input type="number" name="jumlah_bantuan" id="jumlah_bantuan" min="0" required><br><br>
+
+        <label for="kriteria_kelayakan">Kriteria Kelayakan:</label><br>
+        <textarea name="kriteria_kelayakan" id="kriteria_kelayakan" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Simpan Jenis Bantuan">
+        <a href="index.html">Kembali</a>
+    </form>
+    <footer>
+        &copy; 2023 Sistem Pendataan Orang Terlantar
+    </footer>
+</body>
+</html>

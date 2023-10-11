@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Form Input Orang Terlantar</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Sistem Pendataan Orang Terlantar</h1>
+    </header>
+    <h1>Form Input Orang Terlantar</h1>
+        <form action="proses_form.php" method="POST">
+        <label for="nama">Nama:</label>
+        <input type="text" name="nama" id="nama" required><br><br>
+
+        <label for="alamat">Alamat:</label>
+        <input type="text" name="alamat" id="alamat" required><br><br>
+
+        <label for="tanggal_lahir">Tanggal Lahir:</label>
+        <input type="date" name="tanggal_lahir" id="tanggal_lahir"><br><br>
+
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <select name="jenis_kelamin" id="jenis_kelamin">
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+        </select><br><br>
+
+        <label for="informasi_medis">Informasi Medis:</label><br>
+        <textarea name="informasi_medis" id="informasi_medis" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Simpan Data">
+        <a href="index.html">Kembali</a>
+    </form>
+    <footer>
+        &copy; 2023 Sistem Pendataan Orang Terlantar
+    </footer>
+</body>
+</html>

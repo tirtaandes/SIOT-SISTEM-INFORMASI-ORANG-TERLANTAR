@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Input Surat Jalan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sistem Pendataan Orang Terlantar</h1>
+    </header>
+    <h1>Form Input Surat Jalan</h1>
+    <form action="proses_surat_jalan.php" method="POST">
+        <label for="nomor_surat">Nomor Surat:</label>
+        <input type="text" name="nomor_surat" id="nomor_surat" required><br><br>
+
+        <label for="tujuan">Tujuan:</label>
+        <input type="text" name="tujuan" id="tujuan"><br><br>
+
+        <label for="tanggal_penerbitan">Tanggal Penerbitan:</label>
+        <input type="date" name="tanggal_penerbitan" id="tanggal_penerbitan"><br><br>
+
+        <label for="id_orang_terlantar">ID Orang Terlantar:</label>
+        <input type="text" name="id_orang_terlantar" id="id_orang_terlantar" required><br><br>
+
+        <input type="submit" value="Simpan Surat Jalan">
+        <a href="index.html">Kembali</a>
+    </form>
+    <footer>
+        &copy; 2023 Sistem Pendataan Orang Terlantar
+    </footer>
+</body>
+</html>
